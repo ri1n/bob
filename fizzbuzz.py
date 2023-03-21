@@ -1,4 +1,9 @@
-numbers = list(range(1,100))
+x = int(input("first number:"))
+y = int(input("final number:"))
+y = y+1
+
+
+numbers = list(range(x,y))
 
 for num in numbers:
     if num%15==0:
