@@ -12,10 +12,10 @@ def roll_dice(number):
         print(f"Dice {i}: {x}")
         i+=1
         sum += x
-    print(f"player sum: {sum}")
+    print(f"p1 sum: {sum}")
+
     return sum
 
-    print(f"sum of dice: {sum}")
 
 def pc_dice(number):
     pc_sum=0
@@ -30,12 +30,18 @@ def pc_dice(number):
 
     return pc_sum
 
-def judge():
+
+
+
+def judge(number):
+    a=int(roll_dice)
+    b = int(pc_dice)
         
-    if roll_dice(number) > pc_dice(number):                 #problem here is that i cannot say what happens if they are equal to each other
+    if a > b:                 #problem here is that i cannot say what happens if they are equal to each other
         print("player wins")                                #it will run the functions again if i say if roll_dice(number)==pc_dice(number)
       
-
+    elif a == b:
+        print("draw")
     else:
         print("pc wins")
     
@@ -46,7 +52,16 @@ while True:
     if number == 0:
         break
     
-    judge()
+    judge(number)
+
+
+
+
+
+
+
+
+
 
 
 
