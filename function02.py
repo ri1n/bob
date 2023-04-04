@@ -1,0 +1,59 @@
+import random
+
+random.randint(1,6)
+
+
+def roll_dice(number):
+    sum=0
+    
+    i = 1
+    while i < int(number+1):
+        x = random.randint(1,6)
+        print(f"Dice {i}: {x}")
+        i+=1
+        sum += x
+    print(f"player sum: {sum}")
+    return sum
+
+    print(f"sum of dice: {sum}")
+
+def pc_dice(number):
+    pc_sum=0
+    
+    i = 1
+    while i < int(number+1):
+        y = random.randint(1,6)
+        print(f"Dice {i}: {y}")
+        i+=1
+        pc_sum += y
+    print(f"pc sum: {pc_sum}")
+
+    return pc_sum
+
+def judge():
+        
+    if roll_dice(number) > pc_dice(number):                 #problem here is that i cannot say what happens if they are equal to each other
+        print("player wins")                                #it will run the functions again if i say if roll_dice(number)==pc_dice(number)
+      
+
+    else:
+        print("pc wins")
+    
+
+while True:
+    
+    number = int(input("how many dice? "))
+    if number == 0:
+        break
+    
+    judge()
+
+
+
+#     Make 2 more functions:
+# 1. pc_dice()
+# 2. judge()
+
+# After player enters his dice number, the computer will also roll the same number of dice.
+
+# the judge function will see whose number is higher, and declare a winner.
