@@ -2,10 +2,8 @@ import random
 
 random.randint(1,6)
 
-
 def roll_dice(number):
-    sum=0
-    
+    sum = 0
     i = 1
     while i < int(number+1):
         x = random.randint(1,6)
@@ -16,29 +14,25 @@ def roll_dice(number):
 
     return sum
 
-
 def pc_dice(number):
-    pc_sum=0
+    pc_sum = 0
     
     i = 1
     while i < int(number+1):
         y = random.randint(1,6)
         print(f"Dice {i}: {y}")
-        i+=1
+        i += 1
         pc_sum += y
     print(f"pc sum: {pc_sum}")
 
     return pc_sum
 
-
-
-
 def judge(number):
-    a=int(roll_dice)
-    b = int(pc_dice)
+    a = int(roll_dice(number))
+    b = int(pc_dice(number))
         
-    if a > b:                 #problem here is that i cannot say what happens if they are equal to each other
-        print("player wins")                                #it will run the functions again if i say if roll_dice(number)==pc_dice(number)
+    if a > b:                 
+        print("player wins")                                
       
     elif a == b:
         print("draw")
