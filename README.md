@@ -7,3 +7,5 @@ Pretty much random stuff I upload - Ranges from simple maths to printing song ly
 Some code is pretty much split between commented and actual code - Something went wrong trying to commit on github with my older files so it looks dodgy
 
 # Thanks for taking your time to read this so you have expectations when opening my code
+
+Edit: I didn't know it shows previous commits, i've edited this file alone 5 times, a valuable lesson
