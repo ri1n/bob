@@ -1,0 +1,9 @@
+Host: bandit.labs.overthewire.org
+Port: 2220
+special key: |
+bandit0 bandit0 cat
+bandit1 ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If cat ./-
+bandit2 263JGJPfgU6LtdEvgfWU1XP5yac29mFx cat "spaces in this filename"
+bandit3 MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx ls -a (to show hidden files) cat ...Hiding-From-You
+bandit4 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+bandit5 
